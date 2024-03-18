@@ -1,0 +1,7 @@
+<form [formGroup]="myForm" (ngSubmit)="submit()">
+    <datepicker-component appCustomPickerFormats [formOption]="formOptions"></datepicker-component>
+  <div>
+    {{currentDate}}
+    <button mat-button color="primary" (click)="submit()">Submit</button>
+  </div>
+</form>

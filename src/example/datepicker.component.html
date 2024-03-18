@@ -1,0 +1,10 @@
+<div [formGroup]="formOption.formGroup">
+  <mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <!-- #docregion toggle -->
+    <input matInput [matDatepicker]="picker" [formControlName]="formOption.formControlName"/>
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</div>
